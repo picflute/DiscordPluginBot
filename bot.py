@@ -79,7 +79,7 @@ def on_message(message):
     	count = str(reload_bot())
     	client.send_message(message.channel, nick + " was reloaded!\nSuccessfully loaded plugins: " + count)
     elif(message.content.split()[0] in aliases):
-    	index = aliases.index(message.content)
+    	index = aliases.index(message.content.split()[0])
     	if(action[index] == 'Text'):
     		client.send_message(message.channel, output[index])
     	elif(action[index] == 'Python'):
