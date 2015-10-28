@@ -23,7 +23,7 @@ client.login(email, passwd_discord)
 
 def main():
 	reload_bot()
-  client.run()
+    client.run()
 
 def reload_bot():
 	global name
@@ -78,7 +78,7 @@ def on_message(message):
     elif(message.content.startswith('/reload')):
     	count = str(reload_bot())
     	client.send_message(message.channel, nick + " was reloaded!\nSuccessfully loaded plugins: " + count)
-    elif(message.content in aliases):
+    elif(message.content.split()[0] in aliases):
     	index = aliases.index(message.content)
     	if(action[index] == 'Text'):
     		client.send_message(message.channel, output[index])
