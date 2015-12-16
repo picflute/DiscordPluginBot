@@ -2,7 +2,7 @@
 This is a very simple bot for the chat service Discord with plugin functionality over MySQL
 
 ## Dependencies
-- discord.py
+- discord.py (https://github.com/Rapptz/discord.py)
 - MySQLdb
 
 ## What you also need
@@ -21,7 +21,8 @@ This is a very simple bot for the chat service Discord with plugin functionality
   If you did that successfully, you can now go on and start adding plugins!
 
 ## How do I add a plugin?
-You want to get either MySQL Workbench or PHPmyAdmin to insert a new plugin, because Python takes spaces and nls very seriously
+You want to get either MySQL Workbench or PHPmyAdmin to insert a new plugin, because Python takes spaces and nls very seriously.
+
 You don't have to fill in id, but all of the other fields. They should be self explanatory.
 
 ## What is this action thingy?
